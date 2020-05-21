@@ -87,7 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div>
                 <label  for="courriel">Courriel :</label>
-                <input  type="email"  id="courriel"  name="user_email" required>
+                <input  type="text"  id="courriel"  name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                 <span class="error"><?php echo $emailErr ?></span>
             </div>
             <div>
